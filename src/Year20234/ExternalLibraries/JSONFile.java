@@ -21,6 +21,12 @@ public class JSONFile {
         obj.put("name", "foo");
         obj.put("num", 100);
         obj.put("balance", 1000.21);
+
+        JSONObject innerObj = new JSONObject();
+        innerObj.put("start", "04/04/1984");
+        innerObj.put("end", "06/06/2006");
+        
+        obj.put("times", innerObj);
         obj.put("is_vip", true);
 
         // This try-catch block is necessary because the FileWriter class can throw an
