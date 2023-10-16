@@ -1,2 +1,2 @@
-# ProblemSetAnswers
-Answers to any problem sets we have in the club.
+# ClubReference
+Holds any reference materials we use in the club, including problem set answers and library guides
