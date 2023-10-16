@@ -26,6 +26,7 @@ public class JSONFile {
         // This try-catch block is necessary because the FileWriter class can throw an
         // exception
         // If you don't know what exceptions are, don't worry about it for now
+        // Just remember to always wrap reading & writing files in this try-catch block
         try {
             // This is how you write the JSON object to a file
             // First, create a filewriter object and specify the file path to where you
