@@ -1,1 +1,10 @@
-{"balance":1000.21,"is_vip":true,"num":100,"name":"foo"}
+{
+  "times": {
+    "start": "04/04/1984",
+    "end": "06/06/2006"
+  },
+  "balance": 1000.21,
+  "is_vip": true,
+  "num": 100,
+  "name": "foo"
+}
