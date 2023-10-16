@@ -2,7 +2,7 @@ package Year20234.ExternalLibraries;
 
 // The org file is the external library that we are using
 // Download it from https://github.com/stleary/JSON-java
-// The download link is at the top of the README.md displayed under the file list
+// The download link is at the top of the README.md, under the picture
 import org.json.JSONObject;
 
 // These libraries come with Java, no download necessary!
