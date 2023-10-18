@@ -40,7 +40,7 @@ public class JSONFile {
             // Note: if the file does not exist, it will be created when you write the file
             // Note: if the file already exists, it will be overwritten when you write the
             // new file, as opposed to appending to the file
-            FileWriter file = new FileWriter("src/Year20234/ExternalLibraries/data.json");
+            FileWriter file = new FileWriter("src/Year20234/ExternalLibraries/JSONFileGuides/data.json");
             // Then, write the JSON object string to the file
             file.write(obj.toString());
             // Finally, close the filewriter to save the changes you made
@@ -49,7 +49,7 @@ public class JSONFile {
             // This is how you read the JSON object from a file
             // First, read the file into a string by getting the bytes from the file and
             // creating a new string object from those bytes
-            String content = new String(Files.readAllBytes(Paths.get("src/Year20234/ExternalLibraries/data.json")));
+            String content = new String(Files.readAllBytes(Paths.get("src/Year20234/ExternalLibraries/JSONFileGuides/data.json")));
 
             // Then, create a new JSON object from the string
             JSONObject obj2 = new JSONObject(content);
