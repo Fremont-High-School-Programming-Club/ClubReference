@@ -1,4 +1,4 @@
-package Year20234.ExternalLibraries;
+package Year20234.ExternalLibraries.CSVFileGuides;
 
 import java.util.ArrayList;
 import java.io.BufferedReader;
@@ -26,7 +26,7 @@ public class CSVFile {
             // BufferedReader is a class that allows you to read a file line by line,
             // making it perfect for reading CSV files, as they represent a table with each
             // row on a new line
-            BufferedReader reader = new BufferedReader(new FileReader("src/Year20234/ExternalLibraries/data.csv"));
+            BufferedReader reader = new BufferedReader(new FileReader("src/Year20234/ExternalLibraries/CSVFileGuides/data.csv"));
 
             // This arraylist will hold all the rows in the CSV file,
             // where each row is an array of strings
@@ -70,7 +70,7 @@ public class CSVFile {
             // Each row is an array of strings, and the entire table is an array of rows
             // To shorten the code, I've initialized the array using a helper method at the
             // bottom of this file
-            ArrayList<String[]> table = readCSVFile("src/Year20234/ExternalLibraries/data.csv");
+            ArrayList<String[]> table = readCSVFile("src/Year20234/ExternalLibraries/CSVFileGuides/data.csv");
 
             // Now that we've read all the data from the CSV file, we can add a new row to
             // the table
@@ -85,7 +85,7 @@ public class CSVFile {
             // Note: if the file does not exist, it will be created when you write the file
             // Note: if you don't specify a location to write to in the file, the contents
             // of the file will be overwritten
-            FileWriter file = new FileWriter("src/Year20234/ExternalLibraries/new_data.csv");
+            FileWriter file = new FileWriter("src/Year20234/ExternalLibraries/CSVFileGuides/new_data.csv");
 
             // Then, write each row to the file
             // The join method is a method that all strings have, and it joins the array of
@@ -130,10 +130,10 @@ public class CSVFile {
 
     public static void writeCSVFile(String[] newRow) {
         try {
-            ArrayList<String[]> table = readCSVFile("src/Year20234/ExternalLibraries/data.csv");
+            ArrayList<String[]> table = readCSVFile("src/Year20234/ExternalLibraries/CSVFileGuides/data.csv");
             table.add(newRow);
 
-            FileWriter file = new FileWriter("src/Year20234/ExternalLibraries/new_data.csv");
+            FileWriter file = new FileWriter("src/Year20234/ExternalLibraries/CSVFileGuides/new_data.csv");
 
             for (String[] row : table) {
                 file.write(String.join(",", row) + "\n");

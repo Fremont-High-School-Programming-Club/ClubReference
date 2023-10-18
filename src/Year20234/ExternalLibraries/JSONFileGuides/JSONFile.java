@@ -1,4 +1,4 @@
-package Year20234.ExternalLibraries;
+package Year20234.ExternalLibraries.JSONFileGuides;
 
 // The org file is the external library that we are using
 // Download it from https://github.com/stleary/JSON-java
@@ -25,7 +25,7 @@ public class JSONFile {
         JSONObject innerObj = new JSONObject();
         innerObj.put("start", "04/04/1984");
         innerObj.put("end", "06/06/2006");
-        
+
         obj.put("times", innerObj);
         obj.put("is_vip", true);
 
