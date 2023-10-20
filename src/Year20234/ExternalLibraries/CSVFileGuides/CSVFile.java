@@ -128,12 +128,12 @@ public class CSVFile {
         return null;
     }
 
-    public static void writeCSVFile(String[] newRow) {
+    public static void writeCSVFile(String[] newRow, String filePath) {
         try {
-            ArrayList<String[]> table = readCSVFile("src/Year20234/ExternalLibraries/CSVFileGuides/data.csv");
+            ArrayList<String[]> table = readCSVFile(filePath);
             table.add(newRow);
 
-            FileWriter file = new FileWriter("src/Year20234/ExternalLibraries/CSVFileGuides/new_data.csv");
+            FileWriter file = new FileWriter(filePath);
 
             for (String[] row : table) {
                 file.write(String.join(",", row) + "\n");
