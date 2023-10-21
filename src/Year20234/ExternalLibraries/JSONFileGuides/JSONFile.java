@@ -62,4 +62,15 @@ public class JSONFile {
             System.err.println("Error: " + e.getMessage());
         }
     }
+
+    // Simple helper method
+    public static JSONObject readJSONFile(String filePath) {
+        try {
+            String content = new String(Files.readAllBytes(Paths.get(filePath)));
+            return new JSONObject(content);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
 }
