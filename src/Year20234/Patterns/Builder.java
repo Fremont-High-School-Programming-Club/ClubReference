@@ -28,7 +28,7 @@ class User {
     }
 
     public String getUserInfo() {
-        return this.firstName + " " + this.lastName + " " + this.age + " " + this.phone + " " + this.address;
+        return this.lastName + ", " + this.firstName + "; " + this.age + "; " + this.phone + "; " + this.address;
     }
 
     public static class UserBuilder {
