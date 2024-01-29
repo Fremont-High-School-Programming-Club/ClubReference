@@ -1,7 +1,6 @@
 package Year20234.Patterns;
 
 import java.util.Arrays;
-import java.util.ArrayList;
 import java.util.HashSet;
 
 interface Base {
@@ -11,23 +10,18 @@ interface Base {
 }
 
 class MockStructure implements Base {
-    private ArrayList<Integer> privateData;
-
     public MockStructure(int[] myData) {
-        this.privateData = new ArrayList<Integer>();
-        for (int i = 0; i < myData.length; i++) {
-            this.privateData.add(myData[i]);
-        }
+        return;
     }
 
     @Override
     public int getDataHead() {
-        return this.privateData.get(0);
+        return 0;
     }
 
     @Override
     public boolean setData(int num) {
-        return this.privateData.add(num);
+        return true;
     }
 }
 
