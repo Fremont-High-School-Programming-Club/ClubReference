@@ -19,19 +19,25 @@ class Subject {
 }
 
 class Observer {
+    private int value;
     private ArrayList<Subject> subjects;
 
     public Observer() {
         this.subjects = new ArrayList<Subject>();
+        this.value = 0;
+    }
+
+    public void addValue(int value) {
+        this.value += value;
     }
 
     public void addSubject(Subject subject) {
         this.subjects.add(subject);
     }
 
-    public void update(int data) {
+    public void update() {
         for (Subject subject : this.subjects) {
-            subject.update(data);
+            subject.update(this.value);
         }
     }
 }
